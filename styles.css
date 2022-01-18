@@ -8,6 +8,14 @@ h2 {
     color: #FEF2BF;
 }
 
+.start-btn {
+    background-color: #FEF2BF;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -55,4 +63,10 @@ h2 {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media only screen and (max-width : 425px){
+    html, body{
+        min-height : 100vh;
+    }
 }

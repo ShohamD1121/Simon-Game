@@ -16,12 +16,13 @@ $(".btn").click(function () {
     checkAnswer(userClickedPattern.lastIndexOf(userChosenColour));
 });
 
-$(document).keypress(function () {
+$(".start-btn").click(function () {
     if (!started) {
         nextSequence();
         started = true;
     }
 });
+
 
 
 function nextSequence() {
@@ -67,7 +68,7 @@ function checkAnswer(currentLevel) {
         setTimeout(function () {
             $("body").removeClass("game-over");
         }, 200);
-        $("h1").text("Game Over, Press Any Key to Restart");
+        $("h1").text("Game Over!");
 
         if (topScore < level) {
             topScore = level;
